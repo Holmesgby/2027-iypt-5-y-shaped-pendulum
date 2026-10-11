@@ -1,0 +1,11 @@
+# Requirements for the Y-shaped pendulum simulator.
+#
+# The GUI (ypendulum_gui.py) and the physics engine (ypendulum_sim.py) need NOTHING
+# beyond the Python standard library -- tkinter is part of the official Python
+# installer (on many Linux distributions it is a separate package, e.g. python3-tk).
+# Nothing in this file is required just to run the simulator.
+#
+# matplotlib is optional and is used only by the figure export and demo scripts:
+#   python ypendulum_sim.py --export out.png    (make_figure prefers matplotlib and
+#   python demo_three_states.py                  falls back to Pillow if it is missing)
+matplotlib>=3.5  # optional
